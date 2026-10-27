@@ -5,7 +5,7 @@ from schema.schema import DataItem
 class BaseDataStore(ABC):
 
     @abstractmethod
-    def add_items(self, item: List[DataItem]) -> None:
+    def add_items(self, items: List[DataItem]) -> None:
         pass
 
     @abstractmethod
