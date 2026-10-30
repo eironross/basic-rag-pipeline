@@ -3,10 +3,10 @@ from typing import Optional
 
 from schema.schema import EvaluationResult
 
-class BaseEvaluation(ABC):
+class BaseEvaluator(ABC):
 
     @abstractmethod
     def evaluate(
-        self, query: str, reponse: str, expected_answer: str
+        self, query: str, response: str, expected_answer: str
     ) -> EvaluationResult:
         pass
